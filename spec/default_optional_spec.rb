@@ -20,11 +20,4 @@ describe "DEFAULT AND OPTIONAL METHOD VALUES" do
 			expect(student_interests("brady","coding","jiu-jitsu","Australia")).to eq('Brady is interested in ["coding", "jiu-jitsu", "Australia"].')
 		end
 	end
-
-    describe "#student_interests_proper" do
-    		it "returns multiple interests in proper english" do
-    			expect(student_interests_proper("brady","coding","jiu-jitsu","Australia")).to eq('Brady is interested in coding, jiu-jitsu, and Australia.')
-    			expect(student_interests_proper("brady","coding","jiu-jitsu","Bangladesh")).to eq('Brady is interested in coding, jiu-jitsu, and Bangladesh.')
-    		end
-	end
 end
